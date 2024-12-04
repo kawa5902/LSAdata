@@ -8,7 +8,7 @@ PISAやTIMSSといった大規模学力調査のcsvファイルです。その�
 [Colab](https://colab.research.google.com/)でRを動かすときに，[intsvy](https://cran.r-project.org/web/packages/intsvy/index.html)のダウンロードに時間がかかるので，
 事前にlibraryを圧縮・解凍することで時短を図っています。`.ipynb`に以下のように入力するとPISAの分析が可能です。
 
-```R:pisa.ipynb
+```R
 # ダウンロード
 system("curl -L -o library.tar.gz https://github.com/kawa5902/LSAdata/raw/refs/heads/main/202412library.tar.gz")
 # 解凍
