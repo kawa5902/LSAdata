@@ -1,7 +1,8 @@
 # Large-Scale Assessment Data
 
 ## 概要
-PISAやTIMSSといった大規模学力調査のcsvファイルです。そのうち増やしていく予定・・・。
+PISA・TIMSSといった大規模学力調査のcsvファイルです。
+主に日本（JPN）のデータを格納しています。
 
 
 ## library.tar.gzについて
@@ -32,4 +33,8 @@ pisa.mean.pv(paste0("PV", 1:5, "MATH"), by = "ST04Q01", data = jpn2012)
 
 
 ## 参考
-[How to quickly re-install R packages in Google Colab](https://www.tanyongsheng.com/note/how-to-quickly-re-install-r-packages-in-google-colab/): 参考にしたサイト。Rのtarだとreshapeがうまく圧縮できなかったので，systemを使って圧縮・解凍しています。
+- [How to quickly re-install R packages in Google Colab](https://www.tanyongsheng.com/note/how-to-quickly-re-install-r-packages-in-google-colab/): Colabでintsvyを動かす際に参考にしたサイト。Rのtarだとreshapeがうまく圧縮できなかったので，systemを使って圧縮・解凍しています。
+
+- [PISA data and methodology](https://www.oecd.org/en/about/programmes/pisa/pisa-data.html): PISAのデータをダウンロードできます。
+- [TIMSS Data Repository](https://www.iea.nl/data-tools/repository/timss): TIMSSのデータをダウンロードできます。TIMSSのデータをダウンロードできる場所はいくつかあるのですが，ここはSASかSPSSフォーマットをダウンロードできるのでお薦めです。
+
