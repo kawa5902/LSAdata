@@ -11,7 +11,7 @@ PISA・TIMSSといった大規模学力調査のcsvファイルです。
 
 ```R
 # ダウンロード
-system("curl -L -o library.tar.gz https://github.com/kawa5902/LSAdata/raw/refs/heads/main/202412library.tar.gz")
+system("curl -L -o library.tar.gz https://github.com/kawa5902/LSAdata/raw/refs/heads/main/202502library.tar.gz")
 # 解凍
 system("tar -xzf /content/library.tar.gz -C /content")
 .libPaths("library")
