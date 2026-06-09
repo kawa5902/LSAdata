@@ -5,16 +5,15 @@ PISA・TIMSSといった大規模学力調査のcsvファイルです。
 主に日本（JPN）のデータを格納しています。
 
 
-## library.tar.gzについて
+## library.tar.xzについて
 [Colab](https://colab.research.google.com/)でRを動かすときに，[intsvy](https://cran.r-project.org/web/packages/intsvy/index.html)のダウンロードに時間がかかるので，
 事前にlibraryを圧縮・解凍することで時短を図っています。`.ipynb`に以下のように入力するとPISAの分析が可能です。
 
 ```R
-# ダウンロード
-system("curl -L -o library.tar.gz https://github.com/kawa5902/LSAdata/raw/refs/heads/main/202502library.tar.gz")
-# 解凍
-system("tar -xzf /content/library.tar.gz -C /content")
-.libPaths("library")
+# ダウンロード・解凍・パスの変更
+system("curl -L -o /content/202606library.tar.xz https://github.com/kawa5902/LSAdata/raw/refs/heads/main/202606library.tar.xz")
+system("tar -xJf /content/202606library.tar.xz -C /content")
+.libPaths(c("/content/library", .libPaths()))
 
 # library
 library(intsvy)
